@@ -1,6 +1,6 @@
 terraform {
    backend "s3" {
-     bucket = "udacity-tf-sainiman-usw1"
+     bucket = "udacity-tf-msaini-usw1"
      key    = "terraform/terraform.tfstate"
      region = "us-west-1"
    }
@@ -8,7 +8,7 @@ terraform {
 
  provider "aws" {
    region = "us-west-1"
-   #profile = "default"
+#  profile = "default"
    
    default_tags {
      tags = local.tags
